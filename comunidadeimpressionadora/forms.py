@@ -27,7 +27,7 @@ class FormLogin(FlaskForm):
 
 class FormEditarPerfil(FlaskForm):
     email = StringField("Email", validators=[DataRequired(), Email()])
-    foto_perfil = FileField("Atualizar Foto de Perfil", validators=[FileAllowed(['jpeg','png'])])
+    foto_perfil = FileField("Atualizar Foto de Perfil", validators=[FileAllowed(['jpg','png'])])
     curso_excel = BooleanField("Excel impressionador")
     curso_vba = BooleanField("VBA impressionador")
     curso_bi = BooleanField("Power BI impressionador")
